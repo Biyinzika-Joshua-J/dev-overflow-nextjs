@@ -22,7 +22,7 @@ const Theme = () => {
               alt="sun"
               width={20}
               height={20}
-              className="active-theme"
+              className="active-theme cursor-pointer"
             />
           ) : (
             <Image
@@ -30,16 +30,16 @@ const Theme = () => {
               alt="moon"
               width={20}
               height={20}
-              className="active-theme"
+              className="active-theme cursor-pointer"
             />
           )}
         </MenubarTrigger>
         {/* eslint-disable-next-line tailwindcss/no-custom-classname */}
-        <MenubarContent className="dark:border-dark-400 dark:bg-dark-300 absolute right-[-3rem] mt-3 min-w-[120px] rounded border py-2">
+        <MenubarContent className="dark:border-dark-400 dark:bg-dark-300 absolute right-[-3rem] mt-3 min-w-[120px] rounded border py-2 z-50 bg-white">
           {themes.map((theme, idx) => (
             <MenubarItem
               key={idx}
-              className="flex items-center gap-4 px-2.5 py-2 dark:focus:bg-dark-400"
+              className="flex items-center gap-4 px-2.5 py-2 dark:focus:bg-dark-400 cursor-pointer"
               onClick={() => {
                 setMode(theme.value)
                 if (theme.value !== 'system'){
