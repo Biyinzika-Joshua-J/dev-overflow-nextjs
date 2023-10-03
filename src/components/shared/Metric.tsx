@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { formatAndDivideNumber } from "@/lib/utils";
 interface Props {
   imgUrl: string;
   alt: string;
@@ -31,7 +32,7 @@ const Metric = ({
       />
 
       <p className={`${textStyles} flex items-center gap-1`}>
-        <span>{value}</span>
+        <span>{formatAndDivideNumber(value)}</span>
 
         <span
           className={`small-regular line-clamp-1  ${
