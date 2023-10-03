@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef. useState } from "react";
+import React, { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Image from "next/image";
@@ -43,13 +43,13 @@ const Question = () => {
     setIsSubmiting(true);
     try {
       if (type === 'create'){
-
+          
       }else{
 
       }
 
       // navigate to home
-      
+
     } catch (error) {
       
     }finally{
