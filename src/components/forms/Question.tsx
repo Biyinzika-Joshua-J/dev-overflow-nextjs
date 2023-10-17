@@ -43,9 +43,10 @@ const Question = () => {
     setIsSubmiting(true);
     try {
       if (type === 'create'){
-          
+          console.log('log')
+         
       }else{
-
+        console.log('console-log')
       }
 
       // navigate to home
