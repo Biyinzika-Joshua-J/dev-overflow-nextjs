@@ -51,7 +51,7 @@ export default async function Home() {
 
       <div className="mt-10 flex w-full flex-col gap-6">
           {
-            result.questions.length>0?result.questions.map((question, idx) => (
+            result!.questions.length>0?result!.questions.map((question, idx) => (
             <QuestionCard key={idx}  _id={question._id}
             title={question.title}
             tags={question.tags}
