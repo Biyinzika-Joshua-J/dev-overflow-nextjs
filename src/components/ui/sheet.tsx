@@ -1,5 +1,4 @@
 "use client"
-
 import * as React from "react"
 import * as SheetPrimitive from "@radix-ui/react-dialog"
 import { cva, type VariantProps } from "class-variance-authority"
@@ -14,9 +13,11 @@ const SheetTrigger = SheetPrimitive.Trigger
 const SheetClose = SheetPrimitive.Close
 
 const SheetPortal = ({
+   // @ts-ignore
   className,
   ...props
 }: SheetPrimitive.DialogPortalProps) => (
+   // @ts-ignore
   <SheetPrimitive.Portal className={cn(className)} {...props} />
 )
 SheetPortal.displayName = SheetPrimitive.Portal.displayName

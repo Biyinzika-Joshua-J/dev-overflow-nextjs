@@ -43,7 +43,7 @@ const NavContent = () => {
 
 const MobileNav = () => {
   return (
-    <Sheet>
+    <Sheet >
       <SheetTrigger asChild>
         <Image
           src={"/assets/icons/hamburger.svg"}
