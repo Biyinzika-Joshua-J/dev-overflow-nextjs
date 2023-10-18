@@ -1,8 +1,7 @@
 import Question from '@/components/forms/Question'
-import React, { useEffect } from 'react'
-import { createQuestion } from '@/lib/actions/question.action'
+import React from 'react'
 import { redirect } from 'next/navigation';
-import { auth } from '@clerk/nextjs';
+// import { auth } from '@clerk/nextjs';
 import { getUserById } from '@/lib/actions/user.action';
 
 const AskQuestion = async () => {
