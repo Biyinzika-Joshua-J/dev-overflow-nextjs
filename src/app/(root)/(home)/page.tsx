@@ -49,7 +49,7 @@ export default async function Home() {
               linkTitle="Ask a Question"
             />
           ) : result.questions.length > 0 ? (
-            result.questions.map((question, idx) => (
+            result.questions.map((question: { _id: string; title: string; tags: { _id: number; name: string; }[]; author: { _id: string; name: string; picture: string; }; upvotes: number; views: number; answers: object[]; createdAt: Date; }, idx: React.Key | null | undefined) => (
               <QuestionCard
                 key={idx}
                 _id={question._id}
