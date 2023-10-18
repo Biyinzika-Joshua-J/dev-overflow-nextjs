@@ -42,7 +42,7 @@ export const getTimestamp = (createdAt: Date): string => {
 };
 
 
-export const formatAndDivideNumber = (num: number): string => {
+export const formatAndDivideNumber = (num:any): string => {
   if (num >= 1000000) {
     const formattedNum = (num / 1000000).toFixed(1);
     return `${formattedNum}M`;
