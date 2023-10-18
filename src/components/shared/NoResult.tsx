@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../ui/button";
-import { describe } from "node:test";
-import { Description } from "@radix-ui/react-dialog";
+// import { describe } from "node:test";
+// import { Description } from "@radix-ui/react-dialog";
 
 interface Props {
     title : string;
