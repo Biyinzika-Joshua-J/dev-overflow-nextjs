@@ -10,7 +10,7 @@ import QuestionCard from "@/components/cards/QuestionCard";
 import { getQuestions } from "@/lib/actions/question.action";
 
 export default async function Home() {
-  const result = await getQuestions({});
+  const result:any|undefined = await getQuestions({});
 
   return (
     <>
